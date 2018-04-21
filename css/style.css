@@ -2,39 +2,45 @@ body {
     width: 100%;
 }
 
-
-
 .site-header {
     display: flex;
-    flex-wrap: wrap;
-    align-content: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
 .logo {
     width: 200px;
-
+    font-size: 1rem;
 }
 
 .site-nav {
     order: 2;
-    align-content: row;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
 }
 
 .site-nav li {
     list-style: none;
+    display: inline-block;
+    justify-content: center;
+
 }
-
 .check-out {
-
+    font-size: 1rem;
 }
 
 .banner-container {
-    background-image: url('img/flower-bkgd.jpg');
+    background: url('img/flower-bkgd.jpg');
     height: 500px;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-image: url('img/banner-girl.png');
+    background-repeat: no-repeat;
+}
+.banner-container h1 {
+    order: 2;
 }
 
 .tiles-container {
