@@ -1,0 +1,53 @@
+body {
+    width: 450px
+}
+
+
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: row;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.site-nav {
+    order: 2;
+}
+
+.site-nav li {
+    list-style: none;
+}
+
+.check-out {
+
+}
+
+.tiles-container {
+
+}
+.tile-1 {
+    background-image: url("img/mens-category.jpg");
+}
+.tile-2 {
+    background-image: url("img/trends-category.jpg");
+}
+.tile-3 {
+    background-image: url("img/glasses-category.jpg");
+}
+.tile-4 {
+    background-image: url("img/sale-category.jpg");
+}
+.tile-5 {
+    background-image: url("img/bags-category.jpg");
+}
+.tile-6 {
+    background-image: url("img/womens-category.jpg");
+}
+
+
+
