@@ -1,5 +1,5 @@
 body {
-    width: 450px
+    width: 100%;
 }
 
 
@@ -12,11 +12,13 @@ body {
 }
 
 .logo {
+    width: 200px;
 
 }
 
 .site-nav {
     order: 2;
+    align-content: row;
 }
 
 .site-nav li {
@@ -25,6 +27,14 @@ body {
 
 .check-out {
 
+}
+
+.banner-container {
+    background-image: url('img/flower-bkgd.jpg');
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .tiles-container {
