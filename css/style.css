@@ -14,6 +14,16 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', Arial, serif;
 }
 
+.italic {
+    font-family: playfair display;
+    font-style: italic;
+}
+
+strong {
+    font-weight: bolder;
+    font-style: normal;
+}
+
 .link {
     text-decoration: none;
     color: #e2574c;
@@ -50,7 +60,6 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
     color: #e2574c;
     font-size: 1rem;
-
 }
 
 
@@ -70,6 +79,7 @@ h1,h2,h3,h4,h5,h6 {
     align-content: center;
     flex-direction: column;
     background: url(img/banner-girl.png) center 90px no-repeat, url(img/flower-bkgd.jpg) top center no-repeat;
+    opacity: 1.5;
     background-size: contain, cover;
 }
 
@@ -79,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
     justify-self: center;
     flex-direction: column;
     align-self: center;
-    text-shadow: 2px 2px 4px grey;
+    text-shadow: 2px 2px 4px darkgrey;
 }
 
 .banner-h2 {
@@ -89,27 +99,83 @@ h1,h2,h3,h4,h5,h6 {
     justify-self: center;
     flex-direction: column;
     align-self: center;
-    text-shadow: 2px 2px 4px grey;
+    text-shadow: 2px 2px 4px darkgrey;
     font-size: 3rem;
 }
 /* -------------------- */
 
 .callOut-container {
-    height: 300px;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.callOut-heading {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 2.5rem;
+}
+
+.callOut-p {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-family: playfair display, italic;
+    font-size: 1rem;
+    text-align: center;
 }
 
 
 /* -------------------- */
-.tiles-container {
-    style: flex;
-    align-content: stretch;
-    flex-wrap: wrap;
-    padding: 3px;
+
+    .tiles-container {
+    height: 100%;
     width: 100%;
-    height: 600px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+    }
+
+    .row {
+    width: 100%;
+    }
+    
+    .row1 {
+        flex: 100%;
+    }
+    .row2 {
+        flex: 50%;
+    }
+    .row3 {
+        flex: 50%;
+    }
+
+    .row4 {
+        flex: 100%;
+    }
+
+    .tilers {
+        width: 100%
+    }
+
+    .tiles {
+        display: flex;
+        justify-content: space-between;
+        height: 250px;
+        max-width: 100%;
+        margin: 10px;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
 .tile-1 {
     background-image: url("img/mens-category.jpg");
+    background: contain;
 }
 .tile-2 {
     background-image: url("img/trends-category.jpg");
@@ -127,38 +193,105 @@ h1,h2,h3,h4,h5,h6 {
     background-image: url("img/womens-category.jpg");
 }
 
+.tile {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
 /* -------------------- */
 /* Carousel */
+.carousel {
+}
+
+.carousel-header {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
 .main-carousel {
     padding: 0 0 10px 0;
+    width: cover;
 }
 
 /* -------------------- */
 /* Updates call to action */
 .cta-container {
     background-image: url("img/wave-bkgd.jpg");
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    opacity: 1.5;
     background-size: cover;
     background-position: bottom;
+    margin-bottom: 10px;
+    margin-top: 80px;
 }
 
+.cta-heading {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.cta-p {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-family: playfair display, italic;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.email-form {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 
 /* -------------------- */
 /* footer */
 .footer {
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #111111;
     color: white;
     
 }
 
-.footer-container {
+a.footer-container {
+    text-decoration: none;
+
+}
+
+.email {
     text-decoration: none;
 }
 
+.footer-contact {
+    align-items: center;
+}
+
 .footer-social {
+    width: 100%;
     list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer span {
+    display: none;
 }

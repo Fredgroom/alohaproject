@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>aloha apparel company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
@@ -43,41 +44,49 @@
         
         <header class="callOut-container">
 
-            <h3 class="callOut-heading">Hand-Crafted Styles</h3>
+            <h3 class="callOut-heading italic">Hand-Crafted <strong>Styles</strong></h3>
 
-            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+            <p class="callOut-p">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
 
         </header>
 
-        <section class="tiles">
+        <section class="tilers">
            
-            <div class ="tiles-container">
-                <div class= "tiles tile-1">
-                    <p class="mens"><a href="">MEN'S</a></p>
+                <div class ="tiles-container">
+                <div class="row row1">
+                    <div class= "tiles tile-1">
+                        <p class="mens tile"><a href="">MEN'S</a></p>
+                    </div>
+                </div>    
+                <div class="row row2">
+                    <div class= "tiles tile-2">
+                        <p class="trends tile"><a href="">TRENDS</a></p>
+                    </div>
+                    <div class= "tiles tile-3">
+                        <p class="glasses tile"><a href="">GLASSES</a></p>
+                    </div>
                 </div>
-                <div class= "tiles tile-2">
-                    <p class="trends"><a href="">TRENDS</a></p>
-                </div>
-                <div class= "tiles tile-3">
-                    <p class="glasses"><a href="">GLASSES</a></p>
-                </div>
-                <div class= "tiles tile-4">
-                    <p class="sale"><a href="">SALE</a></p>
-                </div>
-                <div class= "tiles tile-5">
-                    <p class="bags"><a href="">BAGS</a></p>
-                </div>
-                <div class= "tiles tile-6">
-                    <p class="womens"><a href="">WOMEN'S</a></p>
-                </div>
-            </div>    
+                <div class="row row3">
+                    <div class= "tiles tile-4">
+                        <p class="sale tile"><a href="">SALE</a></p>
+                    </div>
+                    <div class= "tiles tile-5">
+                        <p class="bags tile"><a href="">BAGS</a></p>
+                    </div>
+                </div>    
+                <div class="row row4">
+                    <div class= "tiles  tile-6">
+                        <p class="womens tile"><a href="">WOMEN'S</a></p>
+                    </div>
+                </div>   
+            </div>
         </section>
 
         <!-- Carousel Element -->
-        <section>
-            <h2>Most-Loved <span>Products</span></h2>
+        <section class="carousel">
+            <h2 class="italic carousel-header">Most-Loved <strong>Products</strong></h2>
             <div class="main-carousel carousel-container">
-                    <div class="carousel carousel-cell">
+                    <div class="carousel vcarousel-cell">
                         <a href="#"><img src="css/img/checked-stretch-dress.jpg" alt="Checked Stretch Dress"></a>
                         <p class="carousel-item-category"><a href="#">DRESSES</a></p>
                         <p class="carousel-item-name"><a href="#"></a>Checked Stretch Dress</p>
@@ -128,24 +137,19 @@
                 </div>
         </section>
 
-
         <!-- Sign up for Updates block-->
         
-
-
         <section class="cta-container">
-            <h2 class="cta-heading">Sign-up for <span class="heading-span">Updates</span></h2>
+            <h2 class="cta-heading italic">Sign-up for <strong>Updates</strong></h2>
             <p class="cta-p">Stay updated on our latest product releases. be first to find out about upcoming sales. and get free style tips from our blog. Unsubscribe at any time.</p>
 
             <div class="email-form"></div>
-                <form action="#">
+                <form action="#" class="form">
                     <input type="text" name="email" placeholder="Your Email" class="cta-input">
                     <div class="submit-button">
                     <input type="submit">
                     </div>
                 </form>
-
-                
             </div>
         </section>
 
@@ -156,8 +160,7 @@
                 <div class="footer footer-contact">
                 <p>&copy;2016 Aloha Apparel Co.</p>
                 <p>Powered by HTML and CSS</p>
-                <br>
-                <p>604-604-6040. <a href="info@alohaapparel.com">info@alohaapparel.com</a></p>
+                <p>604-604-6040. <a href="info@alohaapparel.com" class="email">info@alohaapparel.com</a></p>
                 <br>
                 <address>1490 W Broadway</addresss>
                 <address>Vancouver, BC, Canada</address>
