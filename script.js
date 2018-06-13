@@ -10,3 +10,4 @@ $('.main-carousel').flickity({
     contain: true
   });
 
+  
